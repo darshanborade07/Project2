@@ -1,0 +1,109 @@
+/* Container for the form */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form title */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Individual input box */
+  .input-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styling */
+  .details {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  /* Input fields styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  /* Input fields focus effect */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="tel"]:focus,
+  select:focus {
+    border-color: #777;
+  }
+  
+  /* Button styling */
+  button[type="submit"],
+  button[type="button"] {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  /* Button hover effect */
+  button[type="submit"]:hover,
+  button[type="button"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Toastify container styling */
+  .Toastify__toast-container {
+    width: 300px;
+  }
+  
+  .Toastify__toast {
+    font-size: 14px;
+  }
+  
+  /* Flexbox for user-details section */
+  .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  /* Style for individual input boxes within user-details */
+  .user-details .input-box {
+    flex: 1 1 48%;
+  }
+  
+  /* Make the form responsive */
+  @media (max-width: 768px) {
+    .user-details .input-box {
+      flex: 1 1 100%;
+    }
+  }
+  
